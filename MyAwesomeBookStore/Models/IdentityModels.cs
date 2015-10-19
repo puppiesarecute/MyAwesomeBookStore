@@ -1,9 +1,9 @@
-﻿using System.Data.Entity;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using MyAwesomeBookStore.Models.DataLibrary;
+using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
-using MyAwesomeBookStore.Models.Book;
 
 namespace MyAwesomeBookStore.Models
 {
@@ -22,9 +22,19 @@ namespace MyAwesomeBookStore.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         // TODO change DbSet
-        public DbSet<RootObject> RootObjects { get; set; }
-        public DbSet<Datum> Data { get; set; }
-        public DbSet<AuthorData> AuthorData { get; set; }
+        public DbSet<AccessInfo> AccessInfo { get; set; }
+        public DbSet<Author> Author { get; set; }
+        public DbSet<Category> Category { get; set; }
+        public DbSet<Epub> Epub { get; set; }
+        public DbSet<ImageLinks> ImageLinks { get; set; }
+        public DbSet<IndustryIdentifier> IndustrialIdentifier { get; set; }
+        public DbSet<Item> Item { get; set; }
+        public DbSet<Pdf> Pdf { get; set; }
+        public DbSet<ReadingModes> ReadingModes { get; set; }
+        public DbSet<RootObject> RootObject { get; set; }
+        public DbSet<SaleInfo> SaleInfo { get; set; }
+        public DbSet<SearchInfo> SearchInfo { get; set; }
+        public DbSet<VolumeInfo> VolumeInfo { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

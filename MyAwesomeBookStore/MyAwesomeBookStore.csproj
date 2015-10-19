@@ -189,10 +189,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\DataController.cs" />
+    <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\RootObjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -202,16 +201,23 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Book\AuthorData.cs" />
-    <Compile Include="Models\Book\Datum.cs" />
-    <Compile Include="Models\Book\RootObject.cs" />
+    <Compile Include="Models\DataLibrary\AccessInfo.cs" />
+    <Compile Include="Models\DataLibrary\Author.cs" />
+    <Compile Include="Models\DataLibrary\Category.cs" />
+    <Compile Include="Models\DataLibrary\Epub.cs" />
+    <Compile Include="Models\DataLibrary\ImageLinks.cs" />
+    <Compile Include="Models\DataLibrary\IndustryIdentifier.cs" />
+    <Compile Include="Models\DataLibrary\Item.cs" />
+    <Compile Include="Models\DataLibrary\Pdf.cs" />
+    <Compile Include="Models\DataLibrary\ReadingModes.cs" />
+    <Compile Include="Models\DataLibrary\RootObject.cs" />
+    <Compile Include="Models\DataLibrary\SaleInfo.cs" />
+    <Compile Include="Models\DataLibrary\SearchInfo.cs" />
+    <Compile Include="Models\DataLibrary\VolumeInfo.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\AuthorDataRepository.cs" />
-    <Compile Include="Repositories\DatumRepository.cs" />
     <Compile Include="Repositories\Interfaces\IBookRepository.cs" />
-    <Compile Include="Repositories\RootObjectRepository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -270,12 +276,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\RootObjects\Create.cshtml" />
-    <Content Include="Views\RootObjects\Delete.cshtml" />
-    <Content Include="Views\RootObjects\Details.cshtml" />
-    <Content Include="Views\RootObjects\Edit.cshtml" />
-    <Content Include="Views\RootObjects\Index.cshtml" />
-    <Content Include="Views\Data\BookIndex.cshtml" />
+    <Content Include="Views\Books\TestIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
