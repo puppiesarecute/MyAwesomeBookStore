@@ -13,7 +13,7 @@ namespace MyAwesomeBookStore.Models.DataLibrary
         public string title { get; set; }
         public string subtitle { get; set; }        
         public string publisher { get; set; }
-        public DateTime publishedDate { get; set; }
+        public string publishedDate { get; set; }
         public string description { get; set; }      
         public int pageCount { get; set; }
         public string printType { get; set; }
